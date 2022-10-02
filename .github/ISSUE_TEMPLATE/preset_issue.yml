@@ -1,0 +1,66 @@
+name: "🐛 Preset issue"
+description: Report an issue with a preset
+title: "preset: "
+labels: "bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to contribute!
+
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for your problem.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue
+      description: A clear and concise description of the issue 
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      
+  - type: markdown
+    attributes:
+      value: "## System"
+
+  - type: input
+    attributes:
+      label: OS
+      description: On which system do you run the app?
+      placeholder: Fedora Linux 36 (Workstation Edition)
+
+  - type: input
+    attributes:
+      label: Version
+      description: Which version of the app do you use?
+      placeholder: "0.3.0, 0.3.0-7e0386b"
+
+  - type: dropdown
+    attributes:
+      label: Installation method
+      description: How did you install Gradience ?
+      options:
+        - Flatpak from Flathub
+        - Flatpak from GitHub Actions
+        - Flatpak from manual build 
+        - AUR
+        - Fedora COPR (lyessaadi/gradience)
+        - Manual using meson
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.

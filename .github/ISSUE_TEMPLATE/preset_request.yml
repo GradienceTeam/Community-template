@@ -1,0 +1,25 @@
+name: "💡 Preset request"
+description: Suggest an preset
+title: "preset: "
+labels: "enhancement"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to contribute!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Preset description
+      description: A clear and concise description of what preset is requested. Please include link to the original color palette
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: List any other information that is relevant to your request, such as perfered color variant, color of specific element, etc.
+    validations:
+      required: false
